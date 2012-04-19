@@ -1,6 +1,6 @@
 SomethingNotCool::Application.routes.draw do
   resources :mixes
-
+  root :to => "mixes#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
