@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url1:</b>
+  <%= @mix.url1 %>
+  </p>
+
+
+  <iframe class="youtube-player" type="text/html" width="320" height="200" src="http://www.youtube.com/embed/<%= @mix.url1.split('v=')[1] %>?autoplay=1&start=<%= @mix.offset1 %>" frameborder="0">
+</iframe>
+
+
+<p>
+  <b>Url2:</b>
+  <%= @mix.url2 %>
+</p>
+
+
+  <iframe class="youtube-player" type="text/html" width="320" height="200" src="http://www.youtube.com/embed/<%= @mix.url2.split('v=')[1] %>?autoplay=1&start=<%= @mix.offset2 %>"" frameborder="0">
+</iframe>
+
+
+
+<%= link_to 'Edit', edit_mix_path(@mix) %> |
+<%= link_to 'Back', mixes_path %>
